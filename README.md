@@ -76,7 +76,8 @@ https://app.notion.com/p/384168307e8981c4bef6c7abce8b8709
 
 
 Dashboard
-https://public.tableau.com/views/CharlotteMecklenburgSchoolsELAAssessmentGrades/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
+Tableau Public: https://public.tableau.com/views/CharlotteMecklenburgSchoolsELAAssessmentGrades/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 
 Contact
