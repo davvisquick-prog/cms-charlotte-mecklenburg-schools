@@ -1,6 +1,6 @@
 # Charlotte Mecklenburg Schools — ELA Student Assessment Analysis
  
-Data Disclaimer: This dashboard uses synthetic data generated for demonstration purposes only. It does not represent real school or licensing information.---
+Data Disclaimer: This dashboard uses synthetic data generated for demonstration purposes only. It does not represent real school or licensing information.
  
 ## Overview
  
