@@ -1,4 +1,4 @@
-# Charlotte Mecklenburg Schools — ELA Student Assessment Analysis
+# ELA Student Grade Assessment Analysis
  
 Data Disclaimer: This dashboard uses synthetic data generated for demonstration purposes only. It does not represent real school or licensing information.
  
