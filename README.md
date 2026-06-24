@@ -1,6 +1,8 @@
-# ELA Student Grade Assessment Analysis
+# ELA Student Assessment Analysis
  
-Data Disclaimer: This dashboard uses synthetic data generated for demonstration purposes only. It does not represent real school or licensing information.
+Data analysis project completed as part of the Charlotte Mecklenburg Schools interview process.
+ 
+---
  
 ## Overview
  
@@ -18,20 +20,15 @@ This project analyzes a synthetic Charlotte Mecklenburg Schools dataset of ~39,0
 | Rows | 38,987 |
 | Key Columns | School_Student_ID, AchLevel_First, AchLevel_Final, TestName, GradeLevel, LEPCategory, RaceDescription, EC, School, Teacher, Achlevel, SchoolPerformanceArea, AnnualTarget26_27, Actual23_24, Actual24_25, Actual25_26, RankingTier |
  
-Raw data files are not included in this repository. The dataset is confirmed synthetic and was provided for analysis purposes only.
+The cleaned dataset (`Cleaned_Sample_Data #9.csv`) is included for reproducibility. The dataset is confirmed synthetic and was provided for analysis purposes only. Raw/original source files are not included.
  
 ---
  
 ## Project Structure
  
 ```
-├── 01_inventory.sql          # Row counts, column inventory, initial structural checks
-├── 02_duplicates.sql         # Duplicate detection on School_Student_ID
-├── 03_missing_values.sql     # Null counts and handling decisions per column
-├── 04_formatting.sql         # Type casting, text cleanup, GradeLevel flag column
-├── 05_validity_checks.sql    # Range checks, categorical validation, cross-field logic
-├── 06_integrity_check.sql    # Before/after row counts and totals comparison
-├── schema.md                 # Table structure documentation (no raw data)
+├── all_questions_answered.sql   # All cleaning and analysis queries
+├── Cleaned_Sample_Data #9.csv   # Cleaned dataset (synthetic)
 └── README.md
 ```
  
@@ -66,7 +63,7 @@ Each SQL script is commented inline to document the reasoning behind each cleani
 ## Cleaning Highlights
  
 - **School_Student_ID:** resolved a scientific-notation precision issue traced to Excel's decimal formatting (2 decimal places instead of 0), which had caused 1,001 ID collisions in the original export. Corrected in the source file, verified zero duplicates via COUNTIF, PivotTable, and SQL GROUP BY checks.
-- **GradeLevel vs TestName:** flagged 3 rows where GradeLevel and TestName don't agree (pending data owner confirmation). Excluded from grade-level-specific analysis, retained in school-wide totals.
+- **GradeLevel vs TestName:** flagged 3 rows where GradeLevel and TestName don't agree. Confirmed by data owner as intentional out-of-grade testing, reinstated into full analysis after materiality check.
 - **Achlevel/NP:** confirmed NP represents the lowest achievement tier, with 81.3% of NP rows pairing with AchLevel_Final = 2. AchLevel_Final contains no 1s anywhere in the dataset.
 - **Null check:** zero nulls or blanks across all 18 columns.
 ---
