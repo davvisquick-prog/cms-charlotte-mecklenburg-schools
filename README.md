@@ -1,4 +1,4 @@
-# Charlotte Mecklenburg Schools — [Data Sample #9]
+# ELA Student Grading Assesment 
 
 > Data analysis project completed as part of the Charlotte Mecklenburg Schools interview process.
 
