@@ -1,8 +1,6 @@
 # Charlotte Mecklenburg Schools — ELA Student Assessment Analysis
  
-Data analysis project completed as part of the Charlotte Mecklenburg Schools interview process.
- 
----
+Data Disclaimer: This dashboard uses synthetic data generated for demonstration purposes only. It does not represent real school or licensing information.---
  
 ## Overview
  
